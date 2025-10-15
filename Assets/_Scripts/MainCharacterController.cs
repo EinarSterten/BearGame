@@ -42,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
         if (context.performed)
         {
             Debug.Log("Interaction triggered");
+            animator.SetTrigger("interact");
         }
     }
 
