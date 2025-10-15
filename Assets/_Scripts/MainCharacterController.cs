@@ -15,6 +15,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float verticalVelocity;
     [SerializeField] float gravity = -9.81f;
 
+    //Animator
+    [SerializeField] Animator animator;
+
 
     private void Awake()
     {
@@ -79,5 +82,11 @@ public class PlayerMovement : MonoBehaviour
         move.y = verticalVelocity;
 
         _characterController.Move(move * Time.deltaTime);
+
+        // Determine if player is moving
+        bool isMoving = moveInput.magnitude > 0.1f; // threshold to avoid slight input noise
+
+        // Set animator parameter
+        animator.SetBool("isMoving", isMoving);
     }
 }
