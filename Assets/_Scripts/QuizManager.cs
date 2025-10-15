@@ -37,8 +37,13 @@ public class QuizManager : MonoBehaviour
         loseScreen.SetActive(false);
     }
 
-    public void LoadSceneByName(string Overworld_Prototype)
+    public void exitSchool()
     {
-        SceneManager.LoadScene(Overworld_Prototype);
+        SceneController.Instance.LoadScene("Overworld_Prototype");
     }
+
+    //public void LoadSceneByName(string Overworld_Prototype)
+    //{
+    //    SceneManager.LoadScene(Overworld_Prototype);
+    //}
 }
