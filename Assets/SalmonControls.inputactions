@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "SalmonControls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "e2bbe229-256f-4840-aac6-dd9501393960",
+            "actions": [
+                {
+                    "name": "ClawCharge",
+                    "type": "Value",
+                    "id": "c90122cd-6ca5-40e7-8ed5-1cff2f05f867",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c43a4e9e-a13e-4c8e-a8f2-c024eda68def",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ClawCharge",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
