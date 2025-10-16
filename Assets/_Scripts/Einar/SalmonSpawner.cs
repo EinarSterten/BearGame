@@ -28,7 +28,7 @@ public class SalmonSpawner : MonoBehaviour
         GameObject salmon = Instantiate(salmonPrefab, spawnPosition, Quaternion.identity);
 
         // Set fixed speed moving to the left
-        float speed = UnityEngine.Random.Range(4f, 8f);
+        float speed = UnityEngine.Random.Range(20f, 40f);
         int direction = -1; // Always to the left
 
         // Assign speed and direction in the Salmon script
