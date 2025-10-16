@@ -20,5 +20,9 @@ public class CollectSalmon : MonoBehaviour
     {
         Debug.Log("Updating counter text: " + salmonCount);
         counterText.text = "Salmon caught: " + salmonCount.ToString();
+        if (salmonCount == 10)
+        {
+            SceneController.Instance.LoadScene("Overworld_Prototype");
+        }
     }
 }
