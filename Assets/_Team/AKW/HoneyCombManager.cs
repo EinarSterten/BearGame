@@ -23,7 +23,6 @@ public class HoneyCombManager : MonoBehaviour
 
     void Start()
     {
-        // Start spawning bees
         StartCoroutine(SpawnBeesRoutine());
     }
 
@@ -31,11 +30,9 @@ public class HoneyCombManager : MonoBehaviour
     {
         while (spawning)
         {
-            // Wait a random amount of time before spawning a bee
             float waitTime = UnityEngine.Random.Range(minSpawnTime, maxSpawnTime);
             yield return new WaitForSeconds(waitTime);
 
-            // Randomly choose left or right
             bool spawnFromRight = UnityEngine.Random.value > 0.5f;
 
             if (spawnFromRight)
