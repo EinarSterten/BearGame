@@ -22,7 +22,6 @@ public class BerryCollectible : MonoBehaviour
             if (Vector3.Distance(transform.position, bucketTransform.position) < 0.1f)
             {
                 StoreBerry();
-                Destroy(gameObject);
             }
         }
     }

@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e57a86b4acaeab478013834da56de7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BerryManager
-  berryPrefab: {fileID: 2182542327647035761, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
+  berryPrefab: {fileID: 759397768}
   spawnPoint: {x: 0, y: 5, z: 0}
 --- !u!4 &184779838
 Transform:
@@ -611,6 +611,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Berry (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2182542327647035761, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5575835008164018268, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.720599
@@ -664,6 +668,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 19408202218976420, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 2182542327647035761, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
     - target: {fileID: 2182542327647035761, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
       propertyPath: m_Name
       value: Berry (2)
@@ -725,6 +733,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Berry (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2182542327647035761, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5575835008164018268, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.69636
@@ -770,6 +782,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
+--- !u!1 &759397768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2182542327647035761, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
+  m_PrefabInstance: {fileID: 6200663520533603142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &788180635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -843,6 +860,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Berry (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2182542327647035761, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5575835008164018268, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.0423465
@@ -888,6 +909,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
+--- !u!1001 &1258709710
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2826591481240649952, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 8348583682669925709, guid: 3886cc943401903498d792427e7518ae, type: 3}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.2079763
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348583682669925709, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_Name
+      value: PoisonBerry (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3886cc943401903498d792427e7518ae, type: 3}
 --- !u!1 &1260014974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,6 +1414,37 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1 &1797839329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1797839330}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1797839330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797839329}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 4.61, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1813370989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,6 +1543,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 19408202218976420, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 2182542327647035761, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
     - target: {fileID: 2182542327647035761, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
       propertyPath: m_Name
       value: Berry (1)
@@ -1573,6 +1690,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5909644310319497280
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2826591481240649952, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 8348583682669925709, guid: 3886cc943401903498d792427e7518ae, type: 3}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2833657375642888820, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348583682669925709, guid: 3886cc943401903498d792427e7518ae, type: 3}
+      propertyPath: m_Name
+      value: PoisonBerry
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3886cc943401903498d792427e7518ae, type: 3}
 --- !u!1001 &6200663520533603142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1581,6 +1759,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 19408202218976420, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 2182542327647035761, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
     - target: {fileID: 2182542327647035761, guid: 772f9803edf4e5448a74d5a45548e90b, type: 3}
       propertyPath: m_Name
       value: Berry
@@ -1651,4 +1833,7 @@ SceneRoots:
   - {fileID: 536754918}
   - {fileID: 398100466}
   - {fileID: 1049342955}
+  - {fileID: 5909644310319497280}
   - {fileID: 184779838}
+  - {fileID: 1258709710}
+  - {fileID: 1797839330}
