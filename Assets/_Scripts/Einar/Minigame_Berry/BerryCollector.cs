@@ -2,10 +2,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class BerryCollector : MonoBehaviour
-
 {
-    //[SerializeField] InputAction clickAction;
-
+    [SerializeField] private Transform bucketTransform;
 
     public void OnClickAction(InputAction.CallbackContext context)
     {
@@ -13,14 +11,26 @@ public class BerryCollector : MonoBehaviour
         {
             Vector2 mousePos = Mouse.current.position.ReadValue();
             Vector2 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
-            RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
-            if (hit.collider != null)
+            Debug.Log("World Pos: " + worldPos);
+
+            // Draw a circle in scene view for debugging
+            Debug.DrawLine(worldPos + Vector2.up * 0.1f, worldPos + Vector2.down * 0.1f, Color.red, 2f);
+            Debug.DrawLine(worldPos + Vector2.left * 0.1f, worldPos + Vector2.right * 0.1f, Color.red, 2f);
+
+            Collider2D collider = Physics2D.OverlapPoint(worldPos);
+            if (collider != null)
             {
-                var collectible = hit.collider.GetComponent<BerryCollectable>();
+                Debug.Log("Hit collider: " + collider.gameObject.name);
+                var collectible = collider.GetComponent<BerryCollectible>();
                 if (collectible != null)
                 {
+                    collectible.bucketTransform = this.bucketTransform;
                     collectible.Collect();
                 }
+            }
+            else
+            {
+                Debug.Log("No collider detected");
             }
         }
     }
