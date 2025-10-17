@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Salmon
+  - Poison
   layers:
   - Default
   - TransparentFX
