@@ -2,15 +2,12 @@ using UnityEngine;
 
 public class BeeScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public float beeSpeed = 1f;
+    public Vector3 moveDirection = Vector3.left;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(moveDirection * beeSpeed * Time.deltaTime); 
     }
+
 }
